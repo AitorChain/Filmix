@@ -4,7 +4,7 @@ const drawerWidth = 240;
 
 export default makeStyles((theme) => ({
   toolbar: {
-    height: '80px',
+    height: 'auto',
     display: 'flex',
     justifyContent: 'space-between',
     marginLeft: '240px',
@@ -32,6 +32,11 @@ export default makeStyles((theme) => ({
     '&:hover': {
       color: 'white !important',
       textDecoration: 'none',
+    },
+  },
+  darkModeButton: {
+    [theme.breakpoints.down('sm')]: {
+      marginRight: '-8px !important',
     },
   },
 }));
